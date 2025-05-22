@@ -41,14 +41,14 @@
 //	Change this path to point to the location of AlibreX_x64.tlb on your machine
 //	Usually this would be C:\Program Files\Alibre Design\Program\AlibreX_64.TLB
 //#import "C:\Program Files\Alibre Design\Program\AlibreX_64.tlb"
-#import "C:\Alibre Design\Program\AlibreX_64.tlb"
+#import "C:\Program Files\Alibre Design 28.0.4.28141\Program\AlibreX_64.tlb"
 
 using namespace AlibreX;
 
 //	Change this path to point to the location of AlibreAddOn.tlb on your machine
 //	Usually this would be C:\Program Files\Alibre Design\Program\AlibreAddOn.tlb
 //#import "C:\Program Files\Alibre Design\Program\AlibreAddOn_64.tlb" raw_interfaces_only
-#import "C:\Alibre Design\Program\AlibreAddOn_64.tlb" raw_interfaces_only
+#import "C:\Program Files\Alibre Design 28.0.4.28141\Program\AlibreAddOn_64.tlb" raw_interfaces_only
 
 using namespace AlibreAddOn;
 

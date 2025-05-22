@@ -1,0 +1,428 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.44.35207.1 (0a0328f2).
+//
+// T:\3-alibredesign\SelectionAddOnSample\Debug\AlibreAddOn_64.tlh
+//
+// C++ source equivalent of type library C:\Program Files\Alibre Design 28.0.4.28141\Program\AlibreAddOn_64.tlb
+// compiler-generated file - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace AlibreAddOn {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("aa946d97-7818-4598-bd24-d494eedf5e21"))
+/* LIBID */ __AlibreAddOn;
+enum ADDockStyle : int;
+enum ADDONMenuStates : int;
+enum ADDONMouseButtons : int;
+struct FILETIME;
+enum ImageFormat : int;
+enum MarkerType : int;
+enum TextAlignment : int;
+struct __declspec(uuid("f70ed930-8eca-4db7-9661-9f22247e709a"))
+/* dual interface */ IADAddOnCanvasDisplay;
+struct __declspec(uuid("6eda76da-4998-420d-9bfb-0d1594ef3532"))
+/* dual interface */ IADAddOnCommandSite;
+struct __declspec(uuid("7e5ee543-6a0d-49f8-bd06-926dd3f10b61"))
+/* dual interface */ IAlibreAddOn;
+struct __declspec(uuid("4bf0afec-0414-41c9-9ec7-d4693f6c8210"))
+/* dual interface */ IAlibreAddOnCommand;
+struct __declspec(uuid("594d4737-7fc2-4e7f-b155-29628facf320"))
+/* dual interface */ ILicensedAddOn;
+struct STATSTG;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IADAddOnCanvasDisplay, __uuidof(IADAddOnCanvasDisplay));
+_COM_SMARTPTR_TYPEDEF(ILicensedAddOn, __uuidof(ILicensedAddOn));
+_COM_SMARTPTR_TYPEDEF(IADAddOnCommandSite, __uuidof(IADAddOnCommandSite));
+_COM_SMARTPTR_TYPEDEF(IAlibreAddOnCommand, __uuidof(IAlibreAddOnCommand));
+_COM_SMARTPTR_TYPEDEF(IAlibreAddOn, __uuidof(IAlibreAddOn));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("107fa2c1-2735-399c-b13c-f2fb5d31db06"))
+ADDockStyle : int
+{
+    ADDockStyle_AD_NONE = 0,
+    ADDockStyle_AD_TOP = 1,
+    ADDockStyle_AD_BOTTOM = 2,
+    ADDockStyle_AD_LEFT = 3,
+    ADDockStyle_AD_RIGHT = 4
+};
+
+enum __declspec(uuid("b8834453-c6f3-3cb6-a05c-9f9823803bcb"))
+ADDONMenuStates : int
+{
+    ADDONMenuStates_ADDON_MENU_ENABLED = 1,
+    ADDONMenuStates_ADDON_MENU_GRAYED = 2,
+    ADDONMenuStates_ADDON_MENU_CHECKED = 3,
+    ADDONMenuStates_ADDON_MENU_UNCHECKED = 4
+};
+
+enum __declspec(uuid("c07f197f-6da2-344d-88c3-56a7a7ab6a19"))
+ADDONMouseButtons : int
+{
+    ADDONMouseButtons_ADDON_NO_BUTTON = 0,
+    ADDONMouseButtons_ADDON_LEFT_BUTTON = 1,
+    ADDONMouseButtons_ADDON_RIGHT_BUTTON = 2,
+    ADDONMouseButtons_ADDON_MIDDLE_BUTTON = 4
+};
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("877c1524-c98b-33ba-9f22-c7c1047dfb4b"))
+FILETIME
+{
+    unsigned long DateTimeLow;
+    unsigned long DateTimeHigh;
+};
+
+#pragma pack(pop)
+
+enum __declspec(uuid("53d12848-ff6b-3394-9e6a-5b0d05c5610f"))
+ImageFormat : int
+{
+    ImageFormat_BMP = 0,
+    ImageFormat_JPEG = 1,
+    ImageFormat_PNG = 2
+};
+
+enum __declspec(uuid("05a7ba53-8372-3bf8-8cfa-ef0ac0feec04"))
+MarkerType : int
+{
+    MarkerType_MARKER_STANDARD = 0,
+    MarkerType_MARKER_CROSSHAIR = 1,
+    MarkerType_MARKER_RECT = 2,
+    MarkerType_MARKER_ASTERISK = 3,
+    MarkerType_MARKER_FOCUS = 4,
+    MarkerType_MARKER_SOLID_RECT = 5
+};
+
+enum __declspec(uuid("aca32118-bc0d-3bef-81b3-dab9ac45442c"))
+TextAlignment : int
+{
+    TextAlignment_TopLeft = 0,
+    TextAlignment_CenterLeft = 1,
+    TextAlignment_BottomLeft = 2,
+    TextAlignment_TopCenter = 3,
+    TextAlignment_Center = 4,
+    TextAlignment_BottomCenter = 5,
+    TextAlignment_TopRight = 6,
+    TextAlignment_CenterRight = 7,
+    TextAlignment_BottomRight = 8
+};
+
+struct __declspec(uuid("f70ed930-8eca-4db7-9661-9f22247e709a"))
+IADAddOnCanvasDisplay : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetSegmentTransform (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ VARIANT_BOOL setTranform,
+        /*[in]*/ SAFEARRAY * * transform4x3 ) = 0;
+      virtual HRESULT __stdcall SetSegmentColor (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ long red,
+        /*[in]*/ long green,
+        /*[in]*/ long blue,
+        /*[in]*/ long alpha ) = 0;
+      virtual HRESULT __stdcall SetSegmentReflectivity (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ long reflectivity ) = 0;
+      virtual HRESULT __stdcall AddSubSegment (
+        /*[in]*/ __int64 parentSegment,
+        /*[in]*/ BSTR name,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall DrawMesh (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ SAFEARRAY * * vertices,
+        /*[in]*/ SAFEARRAY * * normals,
+        /*[in]*/ SAFEARRAY * * indices,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall DrawPolyline (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ SAFEARRAY * * points,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall DefineTexture (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ BSTR textureName,
+        /*[in]*/ enum ImageFormat ImageFormat,
+        /*[in]*/ BSTR imageFilePath ) = 0;
+      virtual HRESULT __stdcall SetFaceTexture (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ BSTR textureName ) = 0;
+      virtual HRESULT __stdcall DrawTexturedMesh (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ SAFEARRAY * * vertices,
+        /*[in]*/ SAFEARRAY * * normals,
+        /*[in]*/ SAFEARRAY * * vertexUVParams,
+        /*[in]*/ SAFEARRAY * * indices,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall SetLineWeight (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ float linelineWeightPts ) = 0;
+      virtual HRESULT __stdcall ToggleForegroundRendering (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ VARIANT_BOOL foreground ) = 0;
+      virtual HRESULT __stdcall DrawMarker (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ float posX,
+        /*[in]*/ float posY,
+        /*[in]*/ float posZ,
+        /*[in]*/ long size,
+        /*[in]*/ enum MarkerType type ) = 0;
+      virtual HRESULT __stdcall DrawPolylineWithScreenPoints (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ SAFEARRAY * * points,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall DrawTextMesh (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ BSTR text,
+        /*[in]*/ float posX,
+        /*[in]*/ float posY,
+        /*[in]*/ float posZ,
+        /*[in]*/ enum TextAlignment alignType,
+        /*[in]*/ BSTR fontName,
+        /*[in]*/ float fontSizeInPoints,
+        /*[in]*/ long textColor_ARGB,
+        /*[in]*/ VARIANT_BOOL bold,
+        /*[in]*/ VARIANT_BOOL italic,
+        /*[in]*/ VARIANT_BOOL underline,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall DrawScreenText (
+        /*[in]*/ __int64 segment,
+        /*[in]*/ BSTR text,
+        /*[in]*/ long posX,
+        /*[in]*/ long posY,
+        /*[in]*/ enum TextAlignment alignType,
+        /*[in]*/ BSTR fontName,
+        /*[in]*/ float fontSizeInPoints,
+        /*[in]*/ long textColor_ARGB,
+        /*[in]*/ VARIANT_BOOL staticMesh,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("594d4737-7fc2-4e7f-b155-29628facf320"))
+ILicensedAddOn : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ID (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall SetLicenseLevel (
+        /*[in]*/ long version,
+        /*[in]*/ long type ) = 0;
+};
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("1e85ab10-182a-3e52-8e84-73dd0aa0f1e1"))
+STATSTG
+{
+    LPSTR pwcsName;
+    long type;
+    __int64 cbSize;
+    FILETIME mtime;
+    FILETIME ctime;
+    FILETIME atime;
+    long grfMode;
+    long grfLocksSupported;
+    GUID clsid;
+    long grfStateBits;
+    long reserved;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("6eda76da-4998-420d-9bfb-0d1594ef3532"))
+IADAddOnCommandSite : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall WorldToScreen (
+        /*[in]*/ SAFEARRAY * * pXYZCoordinates,
+        /*[out,retval]*/ SAFEARRAY * * pRetVal ) = 0;
+      virtual HRESULT __stdcall ScreenToWorld (
+        /*[in]*/ SAFEARRAY * * pXYCoordinates,
+        /*[out,retval]*/ SAFEARRAY * * pRetVal ) = 0;
+      virtual HRESULT __stdcall StartChangingModel ( ) = 0;
+      virtual HRESULT __stdcall StopChangingModel ( ) = 0;
+      virtual HRESULT __stdcall InvalidateCanvas ( ) = 0;
+      virtual HRESULT __stdcall Terminate ( ) = 0;
+      virtual HRESULT __stdcall OverrideRender (
+        /*[in]*/ VARIANT_BOOL bOverrideRender ) = 0;
+      virtual HRESULT __stdcall UpdateCanvas ( ) = 0;
+      virtual HRESULT __stdcall UpdateToolbars ( ) = 0;
+      virtual HRESULT __stdcall Begin3DDisplay (
+        /*[in]*/ VARIANT_BOOL bClearViewPort,
+        /*[out,retval]*/ IUnknown * * pRetVal ) = 0;
+      virtual HRESULT __stdcall End3DDisplay ( ) = 0;
+      virtual HRESULT __stdcall InvokeNewCommand (
+        /*[in]*/ struct IAlibreAddOnCommand * pCommand ) = 0;
+      virtual HRESULT __stdcall EnableOnRenderCallback (
+        /*[in]*/ VARIANT_BOOL bEnableRender ) = 0;
+      virtual HRESULT __stdcall EnableExtentsCallback (
+        /*[in]*/ VARIANT_BOOL bEnableExtents ) = 0;
+      virtual HRESULT __stdcall Override3DRender (
+        /*[in]*/ VARIANT_BOOL bOverrideRender ) = 0;
+      virtual HRESULT __stdcall EnableOn3DRenderCallback (
+        /*[in]*/ VARIANT_BOOL bEnableRender ) = 0;
+      virtual HRESULT __stdcall GetViewportHwnd (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall EnableSketchFigureSelection (
+        /*[in]*/ VARIANT_BOOL bEnableFigures ) = 0;
+      virtual HRESULT __stdcall AddDockedPanel (
+        /*[in]*/ long position,
+        /*[in]*/ BSTR panelName,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall RemoveDockedPanel (
+        /*[in]*/ __int64 handle ) = 0;
+      virtual HRESULT __stdcall UpdateDockedPanelPosition (
+        /*[in]*/ __int64 handle,
+        /*[in]*/ long position,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall UpdateMenuItemState (
+        /*[in]*/ long menuID ) = 0;
+      virtual HRESULT __stdcall LegacyRenderingEngine (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("4bf0afec-0414-41c9-9ec7-d4693f6c8210"))
+IAlibreAddOnCommand : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall putref_CommandSite (
+        /*[in]*/ struct IADAddOnCommandSite * pRetVal ) = 0;
+      virtual HRESULT __stdcall get_CommandSite (
+        /*[out,retval]*/ struct IADAddOnCommandSite * * pRetVal ) = 0;
+      virtual HRESULT __stdcall IsTwoWayToggle (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall AddTab (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall OnShowUI (
+        /*[in]*/ __int64 hWnd ) = 0;
+      virtual HRESULT __stdcall OnRender (
+        /*[in]*/ long hDC,
+        /*[in]*/ long clipRectX,
+        /*[in]*/ long clipRectY,
+        /*[in]*/ long clipRectWidth,
+        /*[in]*/ long clipRectHeight ) = 0;
+      virtual HRESULT __stdcall OnClick (
+        /*[in]*/ long screenX,
+        /*[in]*/ long screenY,
+        /*[in]*/ enum ADDONMouseButtons buttons,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall OnDoubleClick (
+        /*[in]*/ long screenX,
+        /*[in]*/ long screenY,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall OnMouseDown (
+        /*[in]*/ long screenX,
+        /*[in]*/ long screenY,
+        /*[in]*/ enum ADDONMouseButtons buttons,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall OnMouseMove (
+        /*[in]*/ long screenX,
+        /*[in]*/ long screenY,
+        /*[in]*/ enum ADDONMouseButtons buttons,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall OnMouseUp (
+        /*[in]*/ long screenX,
+        /*[in]*/ long screenY,
+        /*[in]*/ enum ADDONMouseButtons buttons,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall OnSelectionChange ( ) = 0;
+      virtual HRESULT __stdcall OnTerminate ( ) = 0;
+      virtual HRESULT __stdcall OnComplete ( ) = 0;
+      virtual HRESULT __stdcall OnKeyDown (
+        /*[in]*/ long keycode,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall OnKeyUp (
+        /*[in]*/ long keycode,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall OnEscape (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall OnMouseWheel (
+        /*[in]*/ double delta,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall get_TabName (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall get_Extents (
+        /*[out,retval]*/ SAFEARRAY * * pRetVal ) = 0;
+      virtual HRESULT __stdcall On3DRender ( ) = 0;
+};
+
+struct __declspec(uuid("7e5ee543-6a0d-49f8-bd06-926dd3f10b61"))
+IAlibreAddOn : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_RootMenuItem (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall HasSubMenus (
+        /*[in]*/ long menuID,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall SubMenuItems (
+        /*[in]*/ long menuID,
+        /*[out,retval]*/ SAFEARRAY * * pRetVal ) = 0;
+      virtual HRESULT __stdcall MenuItemText (
+        /*[in]*/ long menuID,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall PopupMenu (
+        /*[in]*/ long menuID,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall MenuItemState (
+        /*[in]*/ long menuID,
+        /*[in]*/ BSTR sessionIdentifier,
+        /*[out,retval]*/ enum ADDONMenuStates * pRetVal ) = 0;
+      virtual HRESULT __stdcall MenuItemToolTip (
+        /*[in]*/ long menuID,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall HasPersistentDataToSave (
+        /*[in]*/ BSTR sessionIdentifier,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall InvokeCommand (
+        /*[in]*/ long menuID,
+        /*[in]*/ BSTR sessionIdentifier,
+        /*[out,retval]*/ struct IAlibreAddOnCommand * * pRetVal ) = 0;
+      virtual HRESULT __stdcall LoadData (
+        /*[in]*/ struct IStream * pCustomData,
+        /*[in]*/ BSTR sessionIdentifier ) = 0;
+      virtual HRESULT __stdcall SaveData (
+        /*[in]*/ struct IStream * pCustomData,
+        /*[in]*/ BSTR sessionIdentifier ) = 0;
+      virtual HRESULT __stdcall setIsAddOnLicensed (
+        /*[in]*/ VARIANT_BOOL isLicensed ) = 0;
+      virtual HRESULT __stdcall MenuIcon (
+        /*[in]*/ long menuID,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall UseDedicatedRibbonTab (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+};
+
+} // namespace AlibreAddOn
+
+#pragma pack(pop)

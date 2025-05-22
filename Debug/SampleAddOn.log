@@ -1,0 +1,48 @@
+﻿  StdAfx.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+T:\3-alibredesign\SelectionAddOnSample\stdafx.h(44,1): warning C4278: 'SendMessage': identifier in type library 'C:\Program Files\Alibre Design 28.0.4.28141\Program\AlibreX_64.tlb' is already a macro; use the 'rename' qualifier
+  (compiling source file 'StdAfx.cpp')
+  
+T:\3-alibredesign\SelectionAddOnSample\stdafx.h(51,9): warning C4192: automatically excluding 'IStream' while importing type library 'C:\Program Files\Alibre Design 28.0.4.28141\Program\AlibreAddOn_64.tlb'
+  (compiling source file 'StdAfx.cpp')
+  
+  AddOnSupport.cpp
+  CAddOnInterface.cpp
+  CSelectDialog.cpp
+  CSelectObjectCommand.cpp
+T:\3-alibredesign\SelectionAddOnSample\CSelectObjectCommand.cpp(185,16): warning C4477: 'sprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'CString'
+  (compiling source file '/CSelectObjectCommand.cpp')
+  
+T:\3-alibredesign\SelectionAddOnSample\CSelectObjectCommand.cpp(185,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/CSelectObjectCommand.cpp')
+  
+T:\3-alibredesign\SelectionAddOnSample\CSelectObjectCommand.cpp(209,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/CSelectObjectCommand.cpp')
+  
+T:\3-alibredesign\SelectionAddOnSample\CSelectObjectCommand.cpp(293,17): warning C4477: 'sprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'CString'
+  (compiling source file '/CSelectObjectCommand.cpp')
+  
+T:\3-alibredesign\SelectionAddOnSample\CSelectObjectCommand.cpp(293,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/CSelectObjectCommand.cpp')
+  
+T:\3-alibredesign\SelectionAddOnSample\CSelectObjectCommand.cpp(601,21): warning C4312: '<function-style-cast>': conversion from 'long' to 'HDC' of greater size
+  (compiling source file '/CSelectObjectCommand.cpp')
+  
+T:\3-alibredesign\SelectionAddOnSample\CSelectObjectCommand.cpp(604,17): warning C4312: '<function-style-cast>': conversion from 'long' to 'HDC' of greater size
+  (compiling source file '/CSelectObjectCommand.cpp')
+  
+T:\3-alibredesign\SelectionAddOnSample\CSelectObjectCommand.cpp(606,19): warning C4312: '<function-style-cast>': conversion from 'long' to 'HDC' of greater size
+  (compiling source file '/CSelectObjectCommand.cpp')
+  
+T:\3-alibredesign\SelectionAddOnSample\CSelectObjectCommand.cpp(608,17): warning C4312: '<function-style-cast>': conversion from 'long' to 'HDC' of greater size
+  (compiling source file '/CSelectObjectCommand.cpp')
+  
+T:\3-alibredesign\SelectionAddOnSample\CSelectObjectCommand.cpp(610,19): warning C4312: '<function-style-cast>': conversion from 'long' to 'HDC' of greater size
+  (compiling source file '/CSelectObjectCommand.cpp')
+  
+  CShowUICommand.cpp
+  SampleAddOn.cpp
+  Generating Code...
+.\SampleAddOn.def(4): warning LNK4017: DESCRIPTION statement not supported for the target platform; ignored
+     Creating library .\Debug\SampleAddOn.lib and object .\Debug\SampleAddOn.exp
+  SampleAddOn.vcxproj -> T:\3-alibredesign\SelectionAddOnSample\Debug\SampleAddOn.dll
