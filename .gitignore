@@ -435,6 +435,10 @@ test-results/
 # Icon must end with two \r
 Icon
 
+Debug/*.pch
+.vs/
+*.ipch
+
 .vs/
 # …except IIS Express config we decided to track
 !.vs/config/
